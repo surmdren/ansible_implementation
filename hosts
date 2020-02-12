@@ -1,0 +1,18 @@
+192.168.56.100
+192.168.56.101
+192.168.56.102
+[lb]
+192.168.56.100
+
+[webservers]
+192.168.56.100
+
+[db]
+192.168.56.102
+
+[mailserver]
+192.168.56.101
+
+[all:vars]
+ansible_user = devops
+ansible_ssh_private_key_file = /home/devops/.ssh/id_rsa
